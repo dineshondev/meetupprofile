@@ -1,0 +1,41 @@
+/*
+    Default definition
+*/
+class=Member {
+
+  @field=title {
+      trait: derived, heading2;
+      type:String;
+      value:${ 'Profile: ' + object.name + " (" + object.age + ")" };
+      after: zTop;
+  }
+
+  field=(uniqueName, name, age) {
+    after:zLeft;
+  }
+
+  field=(created, favoriteIDE, interest) {
+    after:zRight;
+  }
+
+  field=age {
+     valid: ${( value < 15) ? "Sorry you must be older then 15 to attend Ng Meetup": true};
+  }
+
+  field=bio {
+    trait: longtext;
+    after:zBottom;
+    hint: ${"You can type some long text here: " + value.length};
+  }
+
+  field=favoriteIDE {
+    trait: asSelect;
+    choices:['VSCode', 'Webstorm', 'Subline Text'];
+  }
+
+  field=interest {
+    choices:['Motorcyle', 'Space', 'Family'];
+  }
+}
+
+

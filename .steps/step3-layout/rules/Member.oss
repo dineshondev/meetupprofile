@@ -1,0 +1,29 @@
+/*
+    Default definition
+*/
+class=Member {
+
+  field=(uniqueName, name, age) {
+    after:zLeft;
+  }
+
+  field=(created, favoriteIDE, interest) {
+    after:zRight;
+  }
+
+  field=bio {
+    trait: longtext;
+    after:zBottom;
+  }
+
+  field=favoriteIDE {
+    trait: asSelect;
+    choices:['VSCode', 'Webstorm', 'Subline Text'];
+  }
+
+  field=interest {
+    choices:['Motorcyle', 'Space', 'Family'];
+  }
+}
+
+

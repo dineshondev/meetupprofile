@@ -1,0 +1,17 @@
+/*
+    Default definition
+*/
+class=Member {
+  field=bio {
+    trait: longtext;
+  }
+
+  field=favoriteIDE {
+    trait: asSelect;
+    choices:['VSCode', 'Webstorm', 'Subline Text'];
+  }
+
+  field=interest {
+    choices:['Motorcyle', 'Space', 'Family'];
+  }
+}

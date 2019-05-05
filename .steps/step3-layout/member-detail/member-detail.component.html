@@ -1,0 +1,15 @@
+<div class="page">
+  <a mat-button (click)="operation='create'">Create</a> |
+  <a mat-button (click)="operation='edit'">Edit</a> |
+  <a mat-button (click)="operation='view'">View</a>
+
+  <hr/>
+
+  <h2>Member profile</h2>
+
+  <m-context [object]="member" [operation]="operation" layout="Inspect">
+    <m-include-component></m-include-component>
+  </m-context>
+
+</div>
+
