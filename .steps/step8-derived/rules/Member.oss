@@ -8,6 +8,9 @@ class=Member {
       type:String;
       value:${ 'Profile: ' + object.name + " (" + object.age + ")" };
       after: zTop;
+
+      // wrapperComponent:GenericContainerComponent;
+      // wrapperBindings: { tagName:h2; }
   }
 
   field=(uniqueName, name, age) {

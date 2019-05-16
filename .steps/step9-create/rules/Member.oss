@@ -37,13 +37,13 @@ class=Member {
     zTop => title;
     zLeft => uniqueName => name => age;
     zRight => created => favoriteIDE => interest;
-    zBottom => description;
+    zBottom => bio;
 
   }
 
   operation=create {
     zNone => *;
-    zLeft => name => age => description => interest;
+    zLeft => name => age => bio => interest;
   }
 }
 

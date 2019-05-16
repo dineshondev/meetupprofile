@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "compile:oss": "java -jar node_modules/@ngx-metaui/rules/lib/resources/tools/oss/meta-ui-parser.jar --gen --user ./node_modules/@ngx-metaui/rules/lib/metaui/core src/app/rules",
-    "watch:oss": "watch --wait=8 'npm run compile:oss' src/app/rules "
+    "watch:oss": "watch --wait=30 'npm run compile:oss' src/app/rules "
   },
   "private": true,
   "dependencies": {

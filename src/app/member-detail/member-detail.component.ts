@@ -9,9 +9,8 @@ import {Member} from '../model/member';
 })
 export class MemberDetailComponent implements OnInit {
 
-  operation = 'edit';
+  // operation = 'edit';
   member: Member;
-  things: ['Motorcyle', 'Space', 'Family', 'Kite'];
 
   constructor() {
   }
